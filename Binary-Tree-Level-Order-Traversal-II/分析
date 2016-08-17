@@ -1,0 +1,6 @@
+用python的dequeue来实现队列
+dequeue要import 库
+dequeue有qppendleft
+popleft等操作
+
+
