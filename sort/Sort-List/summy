@@ -1,0 +1,12 @@
+关键在于找中间点
+也是list的基本用法之一，通过快慢指针找中间点
+但是要注意起始条件
+如果     ListNode* fast = head;
+         ListNode* slow = head;
+         
+则; while(fast->next && fast->next->next)
+
+如果   ListNode* fast = head;
+       ListNode* slow = head;
+       
+则 while (fast != NULL && fast->next != NULL)
