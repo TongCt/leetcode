@@ -25,17 +25,17 @@ public:
         
         for(int i=0;i<n;++i){
             if(lists[i]){
-                que.push(lists[i]);
+                que.push(lists[i]);//把所有的list的头节点都放到堆里
             }
         }
         
         while(!que.empty()){
-            ListNode* p = que.top();
+            ListNode* p = que.top();//取出堆里最小的List的最小的数
             que.pop();
             res->next = p;
             res=p;
             if(p->next){
-                que.push(res->next);
+                que.push(res->next);//把list中次结点放到堆里
             }
             
         }
