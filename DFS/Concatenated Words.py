@@ -28,5 +28,5 @@ def dfs(strs,words):
     return False
             
             
-            
+      #这道题容易错的是range与 切片的用法     
             
